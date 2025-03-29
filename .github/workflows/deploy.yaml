@@ -24,7 +24,7 @@ jobs:
           && sudo dpkg -i hugo.deb
 
       - name: Build site with Hugo
-        run: env HUGO_ENV="production" hugo --gc --baseURL "https://seungkilee.com/blog/"
+        run: env HUGO_ENV="production" hugo --minify --gc --baseURL "https://seungkilee.com/blog/"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
