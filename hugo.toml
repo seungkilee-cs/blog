@@ -1,4 +1,4 @@
-baseURL = 'https://seungkilee.com/'
+baseURL = 'https://seungkilee.com/blog/'
 languageCode = 'en-us'
 title = 'LeeIsCoding'
 theme = "github-style"
