@@ -24,12 +24,12 @@ jobs:
           && sudo dpkg -i hugo.deb
 
       - name: Build site with Hugo
-        run: hugo --minify --gc --baseURL "${{ github.event.repository.html_url }}"
+        run: hugo --minify --gc --baseURL "https://seungkilee.com/blog/"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public # Path to the built Hugo site
+          path: ./public
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4

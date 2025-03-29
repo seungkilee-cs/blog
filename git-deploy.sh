@@ -24,7 +24,8 @@ if [ -d .git ] || git rev-parse --git-dir > /dev/null 2>&1; then
     fi
 
     # OPTIONAL - Run custom script
-    bash hugo-prebuild.sh && bash hugo-build.sh
+    bash hugo-prebuild.sh
+    # bash hugo-build.sh
 
     # Add all changes to git
     git add .
