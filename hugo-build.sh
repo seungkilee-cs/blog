@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-rm -rf public
+env HUGO_ENV="production" hugo -t github-style

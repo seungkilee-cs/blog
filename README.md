@@ -1,2 +1,2 @@
 # Lee Is Coding
-My journey, logged
+My journey, logged in blog
