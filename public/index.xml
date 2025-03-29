@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LeeIsCoding</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on LeeIsCoding</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Mar 2025 20:39:21 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Approach Problems</title>
+      <link>http://localhost:1313/post/dsa/how-to-approach-problems/</link>
+      <pubDate>Sat, 29 Mar 2025 20:39:21 +0900</pubDate>
+      <guid>http://localhost:1313/post/dsa/how-to-approach-problems/</guid>
+      <description>How do we approach a problem in an interview setting?</description>
+    </item>
+    <item>
+      <title>Making Sense of Dynamic Programing</title>
+      <link>http://localhost:1313/post/dsa/making-sense-of-dynamic-programing/</link>
+      <pubDate>Sat, 29 Mar 2025 20:34:35 +0900</pubDate>
+      <guid>http://localhost:1313/post/dsa/making-sense-of-dynamic-programing/</guid>
+      <description>Why Dynamic Programming is pedantic, and why it has to be</description>
+    </item>
+    <item>
+      <title>Linked List Questions Are Bad Interview Questions</title>
+      <link>http://localhost:1313/post/dsa/why-linked-lists-are-bad-interview-questions/</link>
+      <pubDate>Sat, 29 Mar 2025 20:34:06 +0900</pubDate>
+      <guid>http://localhost:1313/post/dsa/why-linked-lists-are-bad-interview-questions/</guid>
+      <description>Why asking linked list questions is harmful for the interviewee and the interviewer</description>
+    </item>
+    <item>
+      <title>README</title>
+      <link>http://localhost:1313/readme/</link>
+      <pubDate>Sat, 29 Mar 2025 20:13:52 +0900</pubDate>
+      <guid>http://localhost:1313/readme/</guid>
+      <description>&lt;h1 id=&#34;lee-is-coding&#34;&gt;Lee Is Coding&lt;/h1&gt;&#xA;&lt;p&gt;Just a person learning&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Case for Recursion</title>
+      <link>http://localhost:1313/post/dsa/case-for-recursion/</link>
+      <pubDate>Sat, 29 Mar 2025 20:12:27 +0900</pubDate>
+      <guid>http://localhost:1313/post/dsa/case-for-recursion/</guid>
+      <description>Why Recursion is universally hated, and why I do not hate it</description>
+    </item>
+  </channel>
+</rss>

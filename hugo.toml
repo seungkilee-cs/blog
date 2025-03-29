@@ -1,0 +1,7 @@
+baseURL = 'https://seungkilee.com/'
+languageCode = 'en-us'
+title = 'LeeIsCoding'
+theme = "github-style"
+
+[params]
+author = "Lee Is Coding"
