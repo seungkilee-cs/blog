@@ -1,5 +1,5 @@
 +++
-date = '2025-03-29T20:12:27+09:00'
+date = '2025-03-21T20:12:27+09:00'
 draft = false
 title = 'Case for Recursion'
 summary = 'Why Recursion is universally hated, and why I do not hate it'
