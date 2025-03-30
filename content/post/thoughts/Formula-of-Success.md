@@ -6,3 +6,7 @@ summary = 'Relationship between talent, effort, and success'
 +++
 
 # Formula of Success
+
+## Slow Bus and Fast Track
+
+## Simplified Model of Nature vs Nurture

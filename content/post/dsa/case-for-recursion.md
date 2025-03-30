@@ -13,10 +13,22 @@ summary = 'Why Recursion is universally hated, and why I do not hate it'
 
 ## Strength and Weaknesses of Recursion
 
-## Need of Backtracking
+### Implicit State Handling and Memory Access Performance
 
-## Implicit State Handling and Memory Access Performance
+### Need of Backtracking and State Tracking
 
-## Stack Overflow: But exactly how likely is this?
+### Stack Overflow: But exactly how likely is this?
 
-## When to use Recursion
+## But Why is it so Hard?
+
+### Using the Wrong Sword: Recursion as a Tool
+
+## When and How to use Recursion
+
+### When Explicit State Tracking is Difficult
+
+### When Nature of the Solution Inherently Requires Exhaustive Check of Leaf States
+
+### When Natural Structure of the Outcome is Recursive
+
+### Bonus: Pattern Matching and Tail Recursion
