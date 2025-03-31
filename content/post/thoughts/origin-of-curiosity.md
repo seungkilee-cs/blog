@@ -2,7 +2,7 @@
 date = '2025-03-30T12:45:52+09:00'
 draft = false
 title = 'Origin of Curiosity'
-summary = 'Why are things the way that they are and not the way that they aren't'
+summary = 'Why are things the way that they are and not the way that they are not'
 +++
 
 # Origin of Curiosity
