@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 
 # Define the list of categories
-categories=("dsa" "audio" "thoughts" "dev")
+categories=("dsa" "audio" "thoughts" "dev", "life", "literature")
 
 # Prompt the user to select a category
 echo "Select a category:"
 select category in "${categories[@]}"; do
-    if [[ -n "$category" ]]; then
-        echo "You selected: $category"
-        break
-    else
-        echo "Invalid selection. Please try again."
-    fi
+  if [[ -n "$category" ]]; then
+    echo "You selected: $category"
+    break
+  else
+    echo "Invalid selection. Please try again."
+  fi
 done
 
 # Prompt the user to enter the new article title
