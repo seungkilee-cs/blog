@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Define the list of categories
-categories=("dsa" "audio" "thoughts" "dev", "life", "literature")
+categories=("dsa" "audio" "thoughts" "dev", "life", "literature", "controversial")
 
 # Prompt the user to select a category
 echo "Select a category:"
@@ -31,7 +31,7 @@ echo "Creating new Hugo post at: $new_article_path"
 hugo new "$new_article_path"
 
 # Optionally update the front matter with date and draft status using sed
-sed -i "1,10 s/^date: .*/date: $current_date/" "$new_article_path"
-sed -i '1,10 s/^draft: .*/draft: true/' "$new_article_path"
+# sed -i "1,10 s/^date: .*/date: $current_date/" "$new_article_path"
+# sed -i '1,10 s/^draft: .*/draft: true/' "$new_article_path"
 
 echo "New Hugo post created successfully!"
