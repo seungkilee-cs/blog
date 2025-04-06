@@ -2,7 +2,7 @@
 date = '2025-04-06T14:55:03+09:00'
 draft = false 
 title = 'Recursive Architecture of Human Conditions'
-summary = 'Why the myth of iterative self and self improvement fails'
+summary = 'A coarse reductionist attempt to explain human conditions through recursive strcutures'
 +++
 
 # **The Recursive Architecture of Human Consciousness**
@@ -26,14 +26,17 @@ Most remain trapped in the call stack, unaware that their consciousness is:
 
 ```python
 def human_condition(time, self):
-    if time == death: return legacy
+    if time == death:
+        legacy = get_legacy(self)
+        return legacy
     else:
-        reflect_on_past(self)
-        anticipate_future(self)
-        return human_condition(time+1, mutated_self)
+       new_self = reflect_on_past(self)
+       |> anticipate_future(self)
+       |> take_action(self)
+        return human_condition(time+1, new_self)
 ```
 
-The “mutated_self” parameter accumulates side effects from each recursion, making true iteration impossible—we never operate on the same state twice.
+The “new_self” parameter accumulates side effects from each recursion, making true iteration impossible—we never operate on the same state twice.
 
 ## **3. Recursion as Existential Syntax**
 
