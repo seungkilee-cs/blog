@@ -2,16 +2,16 @@
 date = "2025-03-28T20:34:35+09:00"
 draft = false
 categories = ["DSA", "Programming", "Technical", "Explanation"]
-tags = ["Leetcode", "Dynamic Programming", "DSA", "English"]
+tags = ["English", "DSA", "Dynamic Programming"]
 title = "Making Sense of Dynamic Programming"
 summary = "Why Dynamic Programming is pedantic, and why it has to be"
 +++
 
-# Making Sense of Dynamic Programming: Taming the Algorithmic Beast
+# Making Sense of Dynamic Programming
 
-Dynamic Programming (DP). The very words can send shivers down the spine of even seasoned software engineers. It’s that topic, often relegated to late-night study sessions before coding interviews, that feels both ubiquitous and utterly elusive. DP is the invert a binary tree on steroids: a concept you’re forced to learn and regurgitate, despite its near-zero relevance to your day-to-day job. It’s the algorithmic equivalent of a rite of passage, a hazing ritual that leaves you questioning its practicality. Honestly, inverting a binary tree would be more relevant to a programmer's day-to-day job compared to any kind of Dynamic Programming problem as you might actually stare at the tree of states maintained for your source control, attempting to revert a bad merge. Not actually saying that inverting a binary tree will help you there, but I'm saying it's at least nominally relevant. The only way DP is relevant to your life if that it feels like you are getting sticked from both ends while working on those interview questions. Yet here we are, begrudgingly learning DP because it’s the gatekeeper to proving our worth as developers. The question then arises: can we make sense of this beast, or are we doomed to forever parrot textbook definitions? Let's dive in.
+Dynamic Programming (DP). The very words can send shivers down the spine of even seasoned software engineers. It’s that topic, often relegated to late-night study sessions before coding interviews, that feels both ubiquitous and utterly elusive. DP is the invert a binary tree on steroids: a concept you’re forced to learn and regurgitate, despite its near-zero relevance to your day-to-day job. It’s the algorithmic equivalent of a rite of passage, a hazing ritual that leaves you questioning its practicality. Honestly, inverting a binary tree would be more relevant to a programmer's day-to-day job compared to any kind of Dynamic Programming problem as you might actually stare at the tree of states maintained for your source control, attempting to revert a bad merge. Not actually saying that inverting a binary tree will help you there, but I'm saying it's at least nominally relevant. The only way DP is relevant to your life if that it feels like you are getting sticked from both ends while working on those problems. Yet here we are, begrudgingly learning DP because it’s the gatekeeper to proving our worth as developers. The question then arises: can we make sense of this beast, or are we doomed to forever parrot textbook definitions? Let's dive in.
 
-## My DP Question: Explain Dynamic Programming to Me Like I Am a Software Engineer
+## Explain Dynamic Programming to Me Like I Am a Software Engineer
 
 As an interviewer, I’ve given interviews and received interview. When I was giving interviews for some senior engineer positions, I often posed the question: "Explain Dynamic Programming to me like I am a Software Engineer." This threw a lot of the people off, although that wasn't my intention. Notice the subtle, but critical caveat: I don’t want them to dumb it down as if I’m talking to a five-year-old, no sir. I’m looking for a technical explanation, one that assumes I’m an adult software engineer who simply hasn’t grasped the core principles of DP yet. Because this gives me a full grasp of your understanding on the topic.
 
@@ -196,6 +196,10 @@ DP questions frequently evaluate a candidate's familiarity with specific optimiz
 
 Defining states and deriving the appropriate transitions between them in a DP solution can be incredibly unintuitive. This is particularly true under the intense pressure of an interview setting. Successfully navigating this process requires a deep understanding of the problem's underlying dependencies, something many candidates, regardless of their actual abilities, struggle to articulate concisely.
 
+Consider this. You saw what I did up there with the Unique Path problem right? Now, which one of you can derive that relationship without having exposure to the problem? The fact is, if you can derive the recursive solution you could refine it to represent them in a 2D DP array, and once you do that, you can see the overlap and refine that to 1D array solution. But in reality, you will just memorize 1D DP array solution for the interview, and jump to that immediately.
+
+This is why I absolutely hate DP questions both asking and receiving them in interviews. It generally tests exposure to the problem variation, not experience of working through the logic of the solution. FYI, if you jump directly to the optimal solution for DP and not even mention other ways of solving the problem, I have to assume that you are either a genius who can think in assembly language or have seen this problem and have successfully memorized the solutions. Statically the former is unlikely. So if you get a DP question, even if you don't understand it, please at least show why brute force is unreasonable given the constraints.
+
 ### The Real Question It is (And They're Probably Not) Asking
 
 Most DP interview questions aren’t truly assessing, “Can you solve this problem?” The solution is usually relatively straightforward. Instead, they’re probing, often implicitly, “Can you identify the computational bottleneck and devise an optimization strategy to circumvent it?”
@@ -221,10 +225,48 @@ I firmly believe that understanding _why_ caching is beneficial and _how_ it mit
 
 ## So What's the Verdict?
 
-Dynamic Programming is more than just a collection of buzzwords like "overlapping subproblems," "optimal substructure," "memoization," and "tabulation." It’s a testament to computational optimization employed when logical wit reaches its end. Perhaps, one day, we'll discover exploitable modal relationships between the variables and states at play in typical DP problems, allowing us to derive truly elegant, closed-form solutions.
+### What We Learned About Dynamic Programming
 
-Until then, we are left to computationally bludgeon these problems into submission. Consider the Four-Color Map Theorem. For decades, the theorem stood without a concise, human-verifiable proof. Instead, it was brute-forced with immense computational power, exhaustively checking countless configurations until the conjecture was deemed valid, albeit unsatisfyingly.
+Dynamic Programming (DP) is not just an algorithmic buzzword or a rigid category of problems; it’s a versatile optimization technique born out of necessity. At its core, DP is about managing dependencies between states, avoiding redundant computations, and tackling irreducible asymptotic complexity with computational ingenuity. It’s the programmer’s white flag to problems where brute force is impractical, leveraging caching and incremental computation to transform exponential complexity into something manageable.
 
-DP extends this spirit: it’s our human ingenuity, coupled with computational muscle, allowing us to tackle intractable problems. Once you recognize that DP is a versatile _technique_ you can leverage to simplify complexities in graph theory, set theory, and beyond, it transforms from a dreaded interview topic into a powerful tool in your problem-solving arsenal.
+We’ve learned that DP isn’t about memorizing patterns like Fibonacci or Knapsack—it’s about understanding _why_ these problems work with DP and _how_ to structure solutions that exploit optimal substructure and overlapping subproblems. The true challenge lies in identifying the bottlenecks, defining the recurrence relations, and optimizing the process—not blindly categorizing questions as “DP problems.”
 
-So, the next time you encounter a Dynamic Programming problem, don't despair. Embrace the challenge, understand the underlying principles, and wield it with the clinical precision it deserves. After all, it might not be elegant, but sometimes, brute force is the only path forward.
+### What To Do Now
+
+#### Interviewers: Don't Ask for Code in DP Questions
+
+If you want to test a candidate’s ability to anticipate common interview questions and regurgitate memorized solutions, then sure—ask them to code an optimal DP solution. But if your goal is to evaluate genuine problem-solving skills and computational reasoning, avoid this approach entirely.
+
+When a candidate immediately categorizes a problem as “a DP question,” it’s a red flag. This suggests they either have seen the question before or rely on categorization as a crutch to apply DP techniques. In the actual industry, optimization isn’t about tagging problems as “DP” or “Greedy”; it’s about perpetually seeking opportunities to refine solutions given constraints. A senior or principal engineer should be able to approach optimization fluidly, not rigidly.
+
+Instead of asking for code, challenge candidates conceptually:
+
+- Ask them to explain what makes Dynamic Programming _dynamic_.
+- Have them describe DP without using terms like "overlapping subproblems" or "optimal substructure."
+- Push them to break down the problem into irreducible subproblems and steps, identifying bottlenecks that can be optimized, and how they would approach it.
+
+This approach tests their understanding of computational optimization rather than their ability to memorize answers. Problem-solving isn’t about finding the perfect solution immediately; it’s about navigating constraints thoughtfully and iteratively. So often, in attempts to standarize these metrics we end up measuring the candidates' problem solving "skill" more than we measure "problem solving" skill. Avoid this pitfall.
+
+#### Interviewees: Don't Jump to the Optimal Answer
+
+If you’re on the receiving end of a DP question, resist the urge to jump straight into coding the optimal solution after confirming the problem statement. Doing so signals that you’ve likely seen the question before and memorized its answer—a red flag for any interviewer seeking genuine problem-solving skills.
+
+Instead:
+
+1. Discuss the brute-force solution without caching and analyze its computational cost.
+2. Explain why DP is necessary for this problem by identifying bottlenecks in simpler approaches.
+3. Explore at least one non-DP strategy (usually recursively and exhaustively checking leaf states of the fully spun state diagrams, or as I call them, overflowing stack walking) that fail under given constraints before transitioning into DP.
+
+This demonstrates that you understand the problem holistically—not just its optimal solution—and can think critically about why certain techniques are required.
+
+### Every Philosophy's Dream: To Be Obsolete One Day
+
+They say every good philosophy or "-ism" is born with one ultimate goal: to solve its defining problem so thoroughly that it becomes obsolete. A healthy philosophy fixes what it was designed to fix and fades away gracefully—unlike dogmatic movements that perpetually invent new oppressors just to stay relevant.
+
+My dilettante mind hopes that Dynamic Programming embodies this ideal. It’s more than just buzzwords like "memoization," "tabulation," or "optimal substructure." It’s a testament to human ingenuity—a technique we turn to when logical shortcuts fail us, leveraging brute computational force to conquer complexity.
+
+Perhaps one day we’ll discover elegant closed-form solutions for many of the problems DP currently tackles—modal relationships between variables and states that make brute force unnecessary. But until then, we’re left computationally bludgeoning these problems into submission. I mean, consider the Four-Color Map Theorem: for decades, mathematicians couldn’t produce a concise proof for this deceptively simple problem. Instead, they relied on exhaustive computational checks across countless configurations—a brute-force approach that validated the theorem but left many unsatisfied. DP extends this spirit.
+
+Either way, once you recognize DP as a versatile technique—not a rigid category—you liberate yourself from thinking it only applies when tagged as “Dynamic Programming.” Whether simplifying graph theory problems or optimizing recursive solutions in real-world applications, DP transforms from an intimidating interview topic into an indispensable tool in your arsenal.
+
+So next time you encounter a DP problem, don’t despair. Embrace its challenge, understand its principles, and wield it with clinical precision. After all, elegance is nice—but sometimes brute force is all we’ve got.
