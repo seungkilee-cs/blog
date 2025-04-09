@@ -1,6 +1,8 @@
 +++
 date = '2025-03-21T20:12:27+09:00'
 draft = false
+categories = ["DSA", "Programming", "Technical", "Explanation"]
+tags = ["Leetcode", "Recursion", "DSA", "English"]
 title = 'Case for Recursion'
 summary = 'Why Recursion is universally hated, and why I do not hate it'
 +++

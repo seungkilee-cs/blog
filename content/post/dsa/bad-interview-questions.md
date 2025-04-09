@@ -1,6 +1,8 @@
 +++
 date = '2025-03-24T20:34:06+09:00'
 draft = false
+categories = ["DSA", "Programming", "Technical", "Opinion"]
+tags = ["Interview", "Leetcode", "DSA", "English"]
 title = 'Bad Technical Interview Questions'
 summary = 'What are bad interview questions, and why it is harmful for everyone to ask these questions'
 +++

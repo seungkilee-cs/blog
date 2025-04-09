@@ -1,6 +1,8 @@
 +++
 date = '2025-04-03T21:26:18+09:00'
-draft = true
+draft = false
+categories = ["Life", "Tips", "Experience"]
+tags = ["English", "Agency", "Will Power", "Discipline", "Consistency"]
 title = 'On Three Steps in Chain Leading to Action%3A How to Gain Control'
 summary = 'Simple ways of getting control of your life'
 +++

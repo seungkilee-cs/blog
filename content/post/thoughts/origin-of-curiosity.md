@@ -1,14 +1,17 @@
 +++
 date = '2025-03-30T12:45:52+09:00'
 draft = false
+categories = ["Philosophy", "Explanation"]
+tags = ["English", "Curiosity", "Schopenhauer", "Education"]
 title = 'Origin of Curiosity'
-summary = 'Why are things the way that they are and not the way that they are not'
+summary = 'Why are things the way that they are, and not the way that they are not'
 +++
 
 # Origin of Curiosity
 
 ## Crucial Question
-Why are things the way that they are and not the way that they aren't
+
+Why are things the way that they are, and not the way that they aren't?
 
 ## Being Curious and Wanting to Be Curious and Wanting to Want to be Curious
 

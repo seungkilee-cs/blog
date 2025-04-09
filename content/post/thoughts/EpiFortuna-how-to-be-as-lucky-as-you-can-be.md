@@ -1,6 +1,8 @@
 +++
 date = "2025-04-08T12:12:23+09:00"
-draft = false 
+draft = false
+categories = ["Explanation"]
+tags = ["Thoughts", "Aphorism", "English"]
 title = "Epi-Fortuna: How to Be as Lucky as You Can Be"
 summary = "A Cynic's attempt at explaining 'the harder I work, the luckier I get'"
 +++
