@@ -1,6 +1,6 @@
 +++
 date = "2025-04-10T12:20:19+09:00"
-draft = true
+draft = false 
 categories = ["Life", "Philosophy", "Theory"]
 tags = ["English", "Philosophy", "Theory", "Explanation"]
 title = "Spinoza and Kant: a Rudimentary Theory of Auto-Altruism"
