@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Define the list of categories
-categories=("dsa" "audio" "thoughts" "dev" "life" "literature" "controversial" "stationary")
+categories=("dsa" "audio" "thoughts" "dev" "life" "literature" "controversial" "stationary" "philosophy" "economics")
 
 # Prompt the user to select a category
 echo "Select a category:"
@@ -22,7 +22,7 @@ read -p "Enter the new article title: " article_title
 formatted_title=$(echo "$article_title" | sed -e 's/ /-/g' -e 's/:/%3A/g' -e "s/'/%27/g")
 
 # Get the current date in Hugo's expected format (ISO 8601)
-current_date=$(date '+%Y-%m-%dT%T%:z')
+# current_date=$(date '+%Y-%m-%dT%T%:z')
 
 # Construct the path for the new article
 new_article_path="content/post/${category}/${formatted_title}.md"
